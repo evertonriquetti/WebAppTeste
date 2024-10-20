@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Editar Usuário";
+}
+
+<h1 class="display-3">Editar Usuário</h1>
+
+<form method="post">
+    <input type="hidden" name="Id" value="@Model.id" />
+
+    <div class="mb-3">
+        <label class="form-label" for="name">Nome</label>
+        <input type="text" class="form-control" id="name" name="Name" value="@Model.name" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="gender">Gênero</label>
+        <input type="text" class="form-control" id="gender" name="Gender" value="@Model.gender" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="cpf">CPF</label>
+        <input type="text" class="form-control" id="cpf" name="Cpf" value="@Model.cpf" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="Email" value="@Model.email" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="cell">Celular</label>
+        <input type="text" class="form-control" id="cell" name="Cell" value="@Model.cell" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="address">Endereço</label>
+        <input type="text" class="form-control" id="address" name="Address" value="@Model.address" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="city">Cidade</label>
+        <input type="text" class="form-control" id="city" name="City" value="@Model.city" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="state">Estado</label>
+        <input type="text" class="form-control" id="state" name="State" value="@Model.state" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="postcode">CEP</label>
+        <input type="text" class="form-control" id="postcode" name="Postcode" value="@Model.postcode" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="country">País</label>
+        <input type="text" class="form-control" id="country" name="Country" value="@Model.country" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Atualizar</button>
+    <a asp-action="Report" class="btn btn-secondary">Cancelar</a>
+</form>
+
